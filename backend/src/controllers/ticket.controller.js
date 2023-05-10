@@ -19,7 +19,7 @@ const createTicket = catchAsync(async (req, res) => {
 
 const payTicket = catchAsync(async (req, res) => {
   const result = await ticketService.payTicket(req.body.ticket_ids);
-  res.send(result);
+  res.send(resul);
 });
 
 const printTicket = catchAsync(async (req, res) => {
