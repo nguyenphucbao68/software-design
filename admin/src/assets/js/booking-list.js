@@ -92,5 +92,14 @@ $(document).ready(function () {
       $("#prev").attr("disabled", true);
     }
   });
-  
+  $("#prev").click(function () {
+    page--;
+    loadListBookings();
+
+    if (page === 0) {
+      $("#prev").attr("disabled", true);
+    } else {
+      $("#prev").attr("disabled", false);
+    }
+  });
 });
