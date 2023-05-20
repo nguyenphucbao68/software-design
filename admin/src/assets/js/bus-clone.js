@@ -18,13 +18,25 @@ $(document).ready(function () {
   $("#Clone-Button").click(function (e) {
     e.preventDefault();
 
-    const start_time = $("#Start-Time").val();
-    const end_time = $("#End-Time").val();
+    const start_time = new Date($("#Start-Time").val());
+    const end_time = new Date($("#End-Time").val());
+    
+    start = [
+      start_time.getFullYear(),
+      ('0' + (start_time.getMonth() + 1)).slice(-2),
+      ('0' + start_time.getDate()).slice(-2)
+    ].join('/');
+
+    end = [
+      end_time.getFullYear(),
+      ('0' + (end_time.getMonth() + 1)).slice(-2),
+      ('0' + end_time.getDate()).slice(-2)
+    ].join('/');
 
     const data = JSON.stringify({
       id: id,
-      start_time: start_time,
-      end_time: end_time,
+      start_time: start,
+      end_time: end,
     });
 
     $.ajax(`${HOST_NAME}/v1/bus/clone`, {
