@@ -166,6 +166,7 @@ const deleteBO = async (req) => {
 module.exports = {
   deleteBO,
   updateBO,
+  createAccount,
   createBO,
   listBusOperator,
   getReviews,

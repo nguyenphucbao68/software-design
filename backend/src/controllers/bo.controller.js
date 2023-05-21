@@ -42,6 +42,7 @@ module.exports = {
   getBOById,
   deleteBO,
   updateBO,
+  createAccount,
   createBO,
   viewBO,
   getReviews,
