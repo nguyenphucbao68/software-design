@@ -17,5 +17,6 @@ router.route('/create').post(auth('createBO'), validate(boValidation.createBO), 
 router.route('/update').post(auth('updateBO'), validate(boValidation.updateBO), boController.updateBO);
 router.route('/delete').post(auth('deteleBO'), validate(boValidation.deleteBO), boController.deleteBO);
 router.route('/:boId').get(auth('getBOByID'), validate(boValidation.getBOByID), boController.getBOById);
+router.post('/createAcc', validate(boValidation.createAccount), boController.createAccount);
 
 module.exports = router;

@@ -20,6 +20,12 @@ const createBO = catchAsync(async (req, res) => {
   res.send(result);
 });
 
+const createAccount = catchAsync(async (req, res) => {
+  const bo = await boService.createAccount(req);
+  const tokens = await tokenService.generateAuthTokens(bo);
+  delete bo.password;
+  res.status(httpStatus.CREATED).send({bo, token: tokens.access});
+});
 const updateBO = catchAsync(async (req, res) => {
   const result = await boService.updateBO(req);
   res.send(result);
