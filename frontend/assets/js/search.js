@@ -28,8 +28,8 @@ $(document).ready(async function () {
 
       bus_station.data.forEach((item) => {
         {
-          departureContent += `<option value=${item.id}>${item.name},${item.location}</option>`;
-          destinationContent += `<option value=${item.id}>${item.name},${item.location}</option>`;
+          departureContent += `<option value=${item.id}>${item.name}</option>`;
+          destinationContent += `<option value=${item.id}>${item.name}</option>`;
         }
       });
       departureContent += `</select>
