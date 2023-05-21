@@ -69,7 +69,6 @@ $(document).ready(function () {
                         </td>
         `;
 
-          html += `<td class="align-middle"><a href="/pages/booking/update.html?id=${booking.id}" class="btn btn-primary">Edit</a></td>`;
           html += "</tr>";
         });
         $("#booking-list").html(html);
