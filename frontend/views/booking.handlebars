@@ -112,3 +112,43 @@
     </div>
   </div>
 </main>
+
+{{> footer }}
+
+<div class='modal fade' id='exampleModal' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'
+  data-bs-backdrop='static' data-bs-keyboard='false'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header bg-primary text-light d-flex justify-content-center align-items-center'>
+        <h1 class='modal-title fs-5' id='exampleModalLabel'>Alert</h1>
+      </div>
+      <div class='modal-body text-center fs-5'>
+        Your payment is successful
+      </div>
+      <div class='modal-footer d-flex justify-content-center align-items-center'>
+        <button type='button' class='btn btn-primary' style='margin-right: 50px'>
+          Home
+        </button>
+        <button type='button' class='btn btn-primary'>Print PDF</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .quarter-width {
+    width: 25%;
+  }
+
+  .none-list-style-type {
+    list-style-type: none;
+  }
+
+  .disc-list-style-type {
+    list-style-type: disc;
+  }
+
+  .container {
+    width: 80%;
+  }
+</style>
