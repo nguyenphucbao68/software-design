@@ -32,6 +32,13 @@ const createBO = {
     name: Joi.string().required(),
   }),
 };
+const createAccount = {
+  body: Joi.object().keys({
+    email: Joi.string().required(),
+    password: Joi.string().required().custom(password),
+    repassword: Joi.string().required().custom(password),
+  }),
+};
 const updateBO = {
   body: Joi.object().keys({
     id: Joi.string().required(),

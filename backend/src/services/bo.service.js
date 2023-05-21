@@ -102,6 +102,30 @@ const createBO = async (req) => {
   });
   return message;
 };
+const createAccount = async (req) => {
+  if (req.body.password !== req.body.repassword) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Repassword is not identical to password');
+  }
+
+  const saltRounds = 10;
+
+  // eslint-disable-next-line no-param-reassign
+  req.body.password = await bcrypt.hash(req.body.password, saltRounds);
+  // eslint-disable-next-line no-param-reassign
+  req.body.password = Buffer.from(req.body.password);
+
+  delete req.body.repassword
+
+  const bo = prisma.users.create({
+    data: {
+      role: 1,
+      email: req.body.email,
+      password: req.body.password,
+      repassword: req.body.repassword,
+    },
+  });
+  return bo;
+};
 const updateBO = async (req) => {
   const checkBO = await prisma.bus_operators.findUnique({
     where: {
