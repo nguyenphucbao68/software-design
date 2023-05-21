@@ -1,0 +1,26 @@
+<div class="row p-2">
+  <div class="col p-2" id="departure">
+  </div>
+  <div class="col p-2" id="destination">
+  </div>
+</div>
+<div class="row p-2">
+  <div class="col w-100 d-flex">
+    <i class="fa-regular fa-calendar-days flex-fill p-2 fa-2x me-2"></i>
+    <input
+      type="text"
+      placeholder="Departure Date"
+      class="form-control flex-fill p-2"
+      id="datepicker"
+    />
+  </div>
+</div>
+<button type="submit" class="btn btn-primary p-2 mx-auto" id="btnSearch">
+  Search
+</button>
+
+<script>
+  $(document).ready(function(){ $( "#datepicker" ).datepicker(); })
+</script>
+
+<script src="./js/search.js"></script>
