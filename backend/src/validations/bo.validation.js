@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 const Joi = require('joi');
+const { password } = require('./custom.validation');
 
 const getReviews = {
   params: Joi.object().keys({

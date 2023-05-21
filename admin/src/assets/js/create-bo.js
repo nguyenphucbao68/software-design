@@ -50,7 +50,7 @@ $(document).ready(function () {
         repassword: repassword,
       }),
       success: function (data) {
-        // window.location.href = `/pages/bus-operator/`;
+        window.location.href = `/pages/bus-operator/`;
         console.log('bd', data);
       },
       error: function (error) {

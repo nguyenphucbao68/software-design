@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 const catchAsync = require('../utils/catchAsync');
+const httpStatus = require('http-status');
 const { boService } = require('../services');
 
 const getReviews = catchAsync(async (req, res) => {
