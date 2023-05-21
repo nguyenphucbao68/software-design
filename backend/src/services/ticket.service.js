@@ -447,17 +447,19 @@ const createTicketByNumOfSeats = async (email, userId, busId, name, phone, numOf
 
     console.log('test 4');
     const transporter = nodemailer.createTransport({
-      host: 'smtp.sendgrid.net',
+      service: 'gmail',
+      host: 'smtp.gmail.com',
       port: 465,
       secure: true,
       auth: {
-        user: 'apikey',
-        pass: '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',
+        user: 'thien.tien1551@gmail.com',
+        pass: 'hktfafomcastgcnl',
       },
     });
 
+
     const mailOptions = {
-      from: 'Web-HCMUS <group9notification@gmail.com>',
+      from: 'Vexere <thien.tien1551@gmail.com>',
       to: email,
       subject: 'Ticket information',
       html: `<html><body>${template}</body></html>`,

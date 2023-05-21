@@ -149,18 +149,19 @@ const sendEmail = async (req) => {
   try {
     console.log('test 1');
     const transporter = nodemailer.createTransport({
-      host: 'smtp.sendgrid.net',
+      service: 'gmail',
+      host: 'smtp.gmail.com',
       port: 465,
       secure: true,
       auth: {
-        user: 'apikey',
-        pass: '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',
+        user: 'thien.tien1551@gmail.com',
+        pass: 'hktfafomcastgcnl',
       },
     });
     console.log('test 2');
 
     const mailOptions = {
-      from: 'Web-HCMUS <group9notification@gmail.com>',
+      from: 'Vexere <thien.tien1551@gmail.com>',
       to: email,
       subject: 'Verify email',
       text: '\nPlease enter your code ' + user_verification.code,
