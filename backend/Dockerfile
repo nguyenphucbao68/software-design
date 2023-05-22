@@ -31,10 +31,6 @@ COPY --chown=node:node . .
 
 RUN yarn prisma:generate
 
-RUN yarn db:schema
-
-RUN yarn seed
-
 EXPOSE 3000
 
-CMD ["yarn", "start"]
+CMD ["./run-server.sh"]
