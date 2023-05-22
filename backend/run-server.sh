@@ -1,5 +1,4 @@
 #!/bin/bash
 
-npm run db:schema
-npm run seed
-npm run start
+npx prisma db push
+yarn start
