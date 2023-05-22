@@ -33,4 +33,4 @@ RUN yarn prisma:generate
 
 EXPOSE 3000
 
-CMD ["./run-server.sh"]
+CMD ["yarn", "start"]
