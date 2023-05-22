@@ -29,7 +29,9 @@ RUN yarn install --pure-lockfile
 
 COPY --chown=node:node . .
 
-RUN yarn prisma:generate
+RUN yarn prisma:generate 
+    && yarn db:schema
+    && yarn seed
 
 EXPOSE 3000
 
