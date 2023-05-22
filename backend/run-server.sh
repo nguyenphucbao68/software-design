@@ -1,5 +1,5 @@
 #!/bin/bash
 
-yarn db:schema
-yarn seed
-yarn start
+npm run db:schema
+npm run seed
+npm run start
