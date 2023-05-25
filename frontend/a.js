@@ -62,7 +62,67 @@ app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, './views'));
 app.use(express.static(path.join(__dirname, './assets')));
 const BACKEND_URL = process.env.BACKEND_URL || 'http://localhost:3000/v1';
-
+                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                  </div>
 app.get('/', (req, res) => {
   res.render('home', {
     title: 'Home',
