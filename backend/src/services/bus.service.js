@@ -15,15 +15,22 @@ const searchBus = async (body) => {
   };
 
   if (startTime) {
+    console.log('startTime', startTime);
+    const startTimeInDay = new Date(startTime);
+    startTimeInDay.setHours(0, 0, 0, 0);
+    const endTimeInDay = new Date(startTime);
+    endTimeInDay.setHours(23, 59, 59, 999);
+
     query.start_time = {
-      gte: startTime,
+      gte: startTimeInDay,
+      lte: endTimeInDay,
     };
   }
 
   if (boId) {
     query.bo_id = boId;
   }
-
+  console.log('type', type);
   if (typeof type === 'number') {
     query.type = type;
   }

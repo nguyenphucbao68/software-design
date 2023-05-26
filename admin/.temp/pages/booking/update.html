@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+<meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/>
+
+<!-- Favicon icon-->
+<link
+  rel="shortcut icon"
+  type="image/x-icon"
+  href="../../assets/images/favicon/favicon.ico"
+/>
+
+<!-- Libs CSS -->
+
+<link
+  href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+  rel="stylesheet"
+/>
+<link
+  href="../../node_modules/dropzone/dist/dropzone.css"
+  rel="stylesheet"
+/>
+<link
+  href="../../node_modules/@mdi/font/css/materialdesignicons.min.css"
+  rel="stylesheet"
+/>
+<link
+  href="../../node_modules/prismjs/themes/prism-okaidia.css"
+  rel="stylesheet"
+/>
+
+<!-- Theme CSS -->
+<!-- build:css ../../assets/css/theme.min.css -->
+<link rel="stylesheet" href="../../assets/css/theme.css" />
+<!-- endbuild -->
+
+<script>
+  // const HOST_NAME = 'https://vexere-backend.onrender.com';
+
+  const HOST_NAME = "http://localhost:3000";
+</script>
+
+    <title>Setting | Dash Ui - Bootstrap 5 Admin Dashboard Template</title>
+  </head>
+
+  <body class="bg-light">
+    <div id="db-wrapper">
+      <!-- navbar vertical -->
+      <!-- Sidebar -->
+<nav class="navbar-vertical navbar">
+  <div class="nav-scroller">
+    <!-- Brand logo -->
+    <a class="navbar-brand" href="../../index.html">
+      <img src="../../assets/images/brand/logo/logo.svg" alt="" />
+    </a>
+    <!-- Navbar nav -->
+    <ul class="navbar-nav flex-column" id="sideNavbar">
+      <li class="nav-item">
+        <a
+          class="nav-link has-arrow "
+          href="../../index.html"
+        >
+          <i data-feather="home" class="nav-icon icon-xs me-2"></i> Dashboard
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <div class="navbar-heading">Management</div>
+      </li>
+
+      <li class="nav-item" id="bus-operator">
+        <a
+          class="nav-link "
+          href="../../pages/bus-operator"
+        >
+          <i data-feather="sidebar" class="nav-icon icon-xs me-2"> </i>
+          Bus Operator
+        </a>
+      </li>
+
+        
+
+      <!-- <li class="nav-item">
+        <a
+          class="nav-link has-arrow  collapsed "
+          href="#!"
+          data-bs-toggle="collapse"
+          data-bs-target="#busPages"
+          aria-expanded="false"
+          aria-controls="busPages"
+        >
+          <i data-feather="layers" class="nav-icon icon-xs me-2"> </i> Buses
+        </a>
+
+        <div
+          id="busPages"
+          class="collapse  show "
+          data-bs-parent="#sideNavbar"
+        >
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a
+                class="nav-link "
+                href="../../pages/profile.html"
+              >
+                List
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link has-arrow "
+                href="../../pages/bus"
+              >
+                Create
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li> -->
+
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          href="../../pages/bus"
+        >
+          <i data-feather="sidebar" class="nav-icon icon-xs me-2"> </i>
+          Bus
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a
+          class="nav-link "
+          href="../../pages/booking"
+        >
+          <i data-feather="sidebar" class="nav-icon icon-xs me-2"> </i>
+          Booking
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  let userInfo = localStorage.getItem('userInfo');
+  userInfo = (userInfo)?JSON.parse(userInfo):null
+  role = userInfo?.user?.role
+  if(role == 1){
+    document.getElementById("bus-operator").setAttribute("hidden","true");
+  }
+</script>
+
+      <!-- page content -->
+      <div id="page-content">
+        <div class="header @@classList">
+  <!-- navbar -->
+  <nav class="navbar-classic navbar navbar-expand-lg">
+    <a id="nav-toggle" href="#"
+      ><i data-feather="menu" class="nav-icon me-2 icon-xs"></i
+    ></a>
+    <div class="ms-lg-3 d-none d-md-none d-lg-block">
+      <!-- Form -->
+      <form class="d-flex align-items-center">
+        <input type="search" class="form-control" placeholder="Search" />
+      </form>
+    </div>
+    <!--Navbar nav -->
+    <ul class="navbar-nav navbar-right-wrap ms-auto d-flex nav-top-wrap">
+      <!-- List -->
+      <li class="dropdown ms-2">
+        <a
+          class="rounded-circle"
+          href="#"
+          role="button"
+          id="dropdownUser"
+          data-bs-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <div class="avatar avatar-md avatar-indicators avatar-online">
+            <img
+              alt="avatar"
+              src="../../assets/images/avatar/avatar-1.jpg"
+              class="rounded-circle"
+            />
+          </div>
+        </a>
+        <div
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="dropdownUser"
+        >
+          <div class="px-4 pb-0 pt-2">
+            <div class="lh-1">
+              <h5 id="user-email" class="mb-1">John E. Grainger</h5>
+            </div>
+            <div class="dropdown-divider mt-3 mb-2"></div>
+          </div>
+
+          <ul class="list-unstyled">
+            <li>
+              <a
+                id="log-out-btn"
+                class="dropdown-item"
+                href="../../index.html"
+              >
+                <i
+                  class="me-2 icon-xxs dropdown-item-icon"
+                  data-feather="power"
+                ></i
+                >Sign Out
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+        <!-- Container fluid -->
+        <div class="container-fluid p-6">
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-12">
+              <!-- Page header -->
+
+              <div class="border-bottom pb-4 mb-4">
+                <h3 class="mb-0 fw-bold">Update</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-8">
+            <div class="col-xl-3 col-lg-4 col-md-12 col-12">
+              <div class="mb-4 mb-lg-0">
+                <h4 class="mb-1">Booking</h4>
+                <p class="mb-0 fs-5 text-muted">
+                  Booking configuration settings
+                </p>
+              </div>
+            </div>
+
+            <div class="col-xl-9 col-lg-8 col-md-12 col-12">
+              <!-- card -->
+              <div class="card">
+                <!-- card body -->
+                <div class="card-body">
+                  <div>
+                    <!-- border -->
+                    <div class="mb-6">
+                      <h4 class="mb-1">Basic information</h4>
+                    </div>
+                    <form id="update-booking">
+                      <!-- row -->
+                      <div class="mb-3 row">
+                        <label
+                          for="Email"
+                          class="col-sm-4 col-form-label form-label"
+                          >Email</label
+                        >
+                        <div class="col-sm-8">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Email"
+                            id="email"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                      <!-- row -->
+                      <div class="mb-3 row">
+                        <label
+                          for="fullName"
+                          class="col-sm-4 col-form-label form-label"
+                          >Name</label
+                        >
+                        <div class="col-sm-8">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Name"
+                            id="name"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <!-- row -->
+                      <div class="mb-3 row">
+                        <label
+                          for="phone"
+                          class="col-sm-4 col-form-label form-label"
+                          >Phone
+                          <span class="text-muted">(Optional)</span></label
+                        >
+                        <div class="col-md-8 col-12">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Phone"
+                            id="phone"
+                            required
+                          />
+                        </div>
+                      </div>
+                      <!-- row -->
+                      <div class="mb-3 row">
+                        <label
+                          for="location"
+                          class="col-sm-4 col-form-label form-label"
+                          >Status</label
+                        >
+
+                        <div class="col-md-8 col-12">
+                          <select class="form-select" id="status">
+                            <option selected>Select Status</option>
+                            <option value="0">Booked</option>
+                            <option value="1">Paid</option>
+                            <option value="2">Canceled</option>
+                          </select>
+                        </div>
+                      </div>
+                      <!-- row -->
+                      <div class="mb-3 row">
+                        <label
+                          for="phone"
+                          class="col-sm-4 col-form-label form-label"
+                          >Start Point
+                          <span class="text-muted">(Disabled)</span></label
+                        >
+                        <div class="col-md-8 col-12">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Start Point"
+                            id="start_point"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                      <!-- row -->
+                      <div class="mb-3 row">
+                        <label
+                          for="phone"
+                          class="col-sm-4 col-form-label form-label"
+                          >End Point
+                          <span class="text-muted">(Disabled)</span></label
+                        >
+                        <div class="col-md-8 col-12">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="End Point"
+                            id="end_point"
+                            disabled
+                          />
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label
+                          for="phone"
+                          class="col-sm-4 col-form-label form-label"
+                          >Seat
+                        </label>
+                        <div class="col-md-8 col-12">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Seat"
+                            id="seat"
+                            required
+                          />
+                        </div>
+
+                        <!-- button -->
+                        <div class="offset-md-4 col-md-8 col-12 mt-3">
+                          <button type="submit" class="btn btn-primary">
+                            Save Changes
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <!-- Libs JS -->
+<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../../node_modules/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../../node_modules/feather-icons/dist/feather.min.js"></script>
+<script src="../../node_modules/prismjs/prism.js"></script>
+<script src="../../node_modules/apexcharts/dist/apexcharts.min.js"></script>
+<script src="../../node_modules/dropzone/dist/min/dropzone.min.js"></script>
+<script src="../../node_modules/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="../../node_modules/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+
+<!-- Theme JS -->
+<!-- build:js ../../assets/js/theme.min.js -->
+<script src="../../assets/js/main.js"></script>
+<script src="../../assets/js/feather.js"></script>
+<script src="../../assets/js/sidebarMenu.js"></script>
+<script src="../../assets/js/log-out.js"></script>
+
+<!-- endbuild -->
+<script src="../../assets/js/home.js"></script>
+
+  </body>
+
+  <script src="../../assets/js/booking-update.js"></script>
+  <script>
+    $('#user-email').text(
+      JSON.parse(localStorage.getItem('userInfo')).user.email
+    );
+  </script>
+</html>

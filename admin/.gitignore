@@ -1,12 +1,6 @@
-# Dependencies
-node_modules
-
-# yarn error logs
-yarn-error.log
-
-# Environment varibales
-.env*
-!.env*.example
-
-# Code coverage
-coverage
+node_modules/
+dist/
+.temp/
+.DS_Store
+src/docs/demo-dark-light.html
+package-lock.json

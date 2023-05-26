@@ -44,6 +44,7 @@ $(document).ready(function () {
     if (!response) console.log('fetch khong duoc');
     else if (response.message) alert(response.message);
     else {
+      console.log({user: response.user})
       if (!response.user.verification) {
         alert("You haven't verified your account yet. ");
         return;
