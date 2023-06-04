@@ -9,46 +9,7 @@
               <hr />
               <form class='row g-3'>
                 <div class='form-floating'>
-                  <textarea class='form-control' placeholder='Leave a comment here' id='floatingTextarea2'
-                    style='height: 150px; resize: none'></textarea>
-                  <label class='text-muted' for='floatingTextarea2'>Your
-                    Comments.</label>
-                </div>
-                <div>
-                  <span class='float-start'>
-                    <i class='text-warning bi bi-star'></i>
-                    <i class='text-warning bi bi-star'></i>
-                    <i class='text-warning bi bi-star'></i>
-                    <i class='text-warning bi bi-star'></i>
-              <div>
-                <span class='fst-italic fw-lighter'> Phone number: </span>
-                <span class='fw-bolder'> 0888.888.888 </span>
-                <span class='float-end'>
-                  <span class='badge rounded-pill bg-warning text-dark'>
-                    <i class='bi bi-star-fill'></i>
-                    4.1
-                  </span>
-                </span>
-              </div>
-              <hr />
-              <div class='clearfix'>
-                <i class='float-start fs-1 bi bi-person-fill fa-5x me-1'></i>
-                <div class='float-start'>
-                  <div class='fw-bolder'>Nguyễn Đinh Quang Khánh</div>
-                  <div>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                  </div>
-                  <p class='fw-light fst-italic'>Xe đi rất high !!!</p>iv class='clearfix'>
-                <i class='float-start fs-1 bi bi-person-fill fa-5x meclass='float-start'>
-                    <i class='text-warning bi bi-star'></i>
-                    <i class='text-warning bi bi-star'></i>
-                    <i class='text-warning bi bi-star'></i>
-                    <i class='text-warning bi bi-star'></i>
-              <div>
+              
                 <span class='fst-italic fw-lighter'> Phone number: </span>
                 <span class='fw-bolder'> 0888.888.888 </span>
                 <span class='float-end'>
@@ -105,14 +66,19 @@
                   </span>
                 </span>
               </div>
-                <span class='fw-bolder'> 0888.888.888 </span>
-                <span class='float-end'>
+              <div class='clearfix'>
+                <i class='float-start fs-1 bi bi-person-fill fa-5x me-1'></i>
+                <div class='float-start'>
+                  <div class='fw-bolder'>Nguyễn Đinh Quang Khánh</div>
+                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='t
                   <span class='badge rounded-pill bg-warning text-dark'>
                     <i class='bi bi-star-fill'></i>
                     4.1
                   </span>
-                </span>
-              </div>
               <hr />
               <div class='clearfix'>
                 <i class='float-start fs-1 bi bi-person-fill fa-5x me-1'></i>
@@ -122,60 +88,7 @@
                     <i class='text-warning bi bi-star-fill'></i>
                     <i class='text-warning bi bi-star-fill'></i>
                     <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                  </div>
-                  <p class='fw-light fst-italic'>Xe đi rất high !!!</p>
-                </div>
-              </div>
-              <hr />
-              <div class='clearfix'>
-                <i class='float-start fs-1 bi bi-person-fill fa-5x me-1'></i>
-                <div class='float-start'>
-                  <div class='fw-bolder'>Nguyễn Đinh Quang Khánh</div>
-                  <div>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                  </div>
-                  <p class='fw-light fst-italic'>Xe đi rất high !!!</p>
-                </div>
-              <div>
-                <span class='fst-italic fw-lighter'> Phone number: </span>
-                <span class='fw-bolder'> 0888.888.888 </span>
-                <span class='float-end'>
-                  <span class='badge rounded-pill bg-warning text-dark'>
-                    <i class='bi bi-star-fill'></i>
-                    4.1
-                  </span>
-                </span>
-              </div>
-              <hr />
-              <div class='clearfix'>
-                <i class='float-start fs-1 bi bi-person-fill fa-5x me-1'></i>
-                <div class='float-start'>
-                  <div class='fw-bolder'>Nguyễn Đinh Quang Khánh</div>
-                  <div>ge-item'>
-                    <a class='page-link' href='#'>2</a>
-                  </li>
-                  <li class='page-item'>
-                    <a class='page-link' href='#'>3</a>
-                  </li>
-              <hr />
-              <div class='clearfix'>
-                <i class='float-start fs-1 bi bi-person-fill fa-5x me-1'></i>
-                <div class='float-start'>
-                  <div class='fw-bolder'>Nguyễn Đinh Quang Khánh</div>
-                  <div>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                    <i class='text-warning bi bi-star-fill'></i>
-                  </div>
-                  <p class='fw-light fst-italic'>Xe đi rất high !!!</p>
+                    <i class='text-warning bi 
                 </div>
               <div>
                 <span class='fst-italic fw-lighter'> Phone number: </span>
@@ -209,6 +122,7 @@
                   </span>
               <hr />
               <div class='clearfix'>
+                <i class='float-start fs-1 bi bi-person-fill ffix'>
                 <i class='float-start fs-1 bi bi-person-fill fa-5x me-1'></i>
                 <div class='float-start'>
                   <div class='fw-bolder'>Nguyễn Đinh Quang Khánh</div>
@@ -239,6 +153,15 @@
                     <i class='text-warning bi bi-star-fill'></i>
                     <i class='text-warning bi bi-star-fill'></i>
                     <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>fix'>
+                <i class='float-start fs-1 bi bi-person-fill fa-5x me-1'></i>
+                <div class='float-start'>
+                  <div class='fw-bolder'>Nguyễn Đinh Quang Khánh</div>
+                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
                     <i class='text-warning bi bi-star-fill'></i>
                   </div>
                   <p class='fw-light fst-italic'>Xe đi rất high !!!</p>
@@ -254,6 +177,14 @@
               <hr />
               <div class='clearfix'>
                 <i class='float-start fs-1 bi bi-person-fill fa-5x me-1'></i>
+                <div class='float-start'>
+                  <div class='fw-bolder'>Nguyễn Đinh Quang Khánh</div>
+                  <div>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>
+                    <i class='text-warning bi bi-star-fill'></i>a-5x me-1'></i>
                 <div class='float-start'>
                   <div class='fw-bolder'>Nguyễn Đinh Quang Khánh</div>
                   <div>
